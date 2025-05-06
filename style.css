@@ -1,0 +1,97 @@
+/*
+Theme Name:     Hagefiksern
+Theme URI:      https://hagefiksern.no
+Author:         Ditt Navn
+Author URI:     https://hagefiksern.no
+Description:    Custom WordPress-tema for Hagefiksern.no
+Version:        1.0
+Text Domain:    hagefiksern
+*/
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@300;400&display=swap');
+
+/* CSS Variables */
+:root {
+  /* Colors */
+  --background: #15182F;
+  --primary: #36F84F;
+  --light: #FFFFFF;
+  --dark: #0A0C1D;
+  --gray-100: #F8F9FA;
+  --gray-200: #E9ECEF;
+  --gray-300: #DEE2E6;
+  --gray-400: #CED4DA;
+  --gray-500: #ADB5BD;
+  --gray-600: #6C757D;
+  --gray-700: #495057;
+  --gray-800: #343A40;
+  --gray-900: #212529;
+  --success: #28a745;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --info: #17a2b8;
+  
+  /* Typography */
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Roboto', sans-serif;
+  
+  /* Spacing - 8px system */
+  --spacing-1: 0.5rem;    /* 8px */
+  --spacing-2: 1rem;      /* 16px */
+  --spacing-3: 1.5rem;    /* 24px */
+  --spacing-4: 2rem;      /* 32px */
+  --spacing-5: 2.5rem;    /* 40px */
+  --spacing-6: 3rem;      /* 48px */
+  --spacing-7: 3.5rem;    /* 56px */
+  --spacing-8: 4rem;      /* 64px */
+  
+  /* Grid */
+  --grid-columns: 12;
+  --grid-gutter: 1rem;
+  
+  /* Breakpoints */
+  --breakpoint-tablet: 640px;
+  --breakpoint-desktop: 1024px;
+  
+  /* Other */
+  --border-radius: 0.5rem;
+  --transition-speed: 0.3s;
+  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* General Styles */
+body {
+  font-family: var(--font-body);
+  font-weight: 300;
+  background-color: var(--background);
+  color: var(--light);
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: var(--spacing-3);
+  color: var(--light);
+}
+
+p {
+  margin-bottom: var(--spacing-3);
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: color var(--transition-speed) ease;
+}
+
+a:hover {
+  color: var(--light);
+}
+
+/* Import child theme styles */
+@import url('assets/css/styles.css');
