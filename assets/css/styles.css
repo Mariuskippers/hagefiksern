@@ -804,3 +804,6 @@
     margin-bottom: var(--spacing-2);
   }
 }
+html {
+  scroll-behavior: smooth;
+}
